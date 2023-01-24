@@ -15,47 +15,138 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.container{
+.background-img {
+    width: 100%;
+    display: block;
+}
+
+.text-container {
+    width: 800px;
     position: relative;
+    display: inline-block;
 }
 
-.background-img{
-    width:60%;
-}
-
-.text-container{
-    width:60%;
-    padding:4rem 0 0 7rem;
+.text {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
+    padding: 4rem 0 0 7rem;
+    width: 100%;
 }
 
-.logo{
+.logo {
     margin-bottom: 6rem;
 }
 
-h1{
+h1 {
     letter-spacing: 0.5rem;
     line-height: 1.2;
     font-size: 3rem;
     font-weight: 500;
 }
 
-h1 span{
+h1 span {
     color: hsl(0, 36%, 70%);
-    font-weight:200;
+    font-weight: 200;
 }
 
-p{
+p {
     font-size: 1rem;
-    padding-right:15rem;
+    padding-right: 15rem;
     line-height: 1.5;
     margin-bottom: 2rem;
     color: hsl(0, 36%, 70%);
     font-weight: 500;
 }
 
-.image-container{
-    display:inline-block;
+form {
+    position: relative;
+}
+
+input {
+    padding: 0.7rem 1.5rem;
+    border-radius: 3rem;
+    border: 1.3px solid hsl(0, 36%, 70%);
+    width: 20rem;
+    font-size: 1rem;
+}
+
+input.active {
+    border-color: hsl(0, 93%, 68%);
+}
+
+input::placeholder {
+    color: hsl(0, 36%, 70%);
+    opacity: 0.4;
+}
+
+input:focus {
+    outline: none;
+    border: 1.2px solid hsl(0, 74%, 74%);
+}
+
+.error-icon {
+    position: absolute;
+    left: 14rem;
+    top: 0.5rem;
+    display: none;
+}
+
+.submit-btn {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5rem;
+    height: 2.7rem;
+    width: 5rem;
+    position: absolute;
+    left: 17rem;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    text-align: center;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-image: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
+}
+
+.submit-btn i {
+    line-height: 1.3;
+    font-size: 2rem;
+    ;
+}
+
+.error-message {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    color: hsl(0, 93%, 68%);
+    display: none;
+}
+
+.error-message.active,
+.error-icon.active {
+    display: inline-block
+}
+
+.image-container {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    vertical-align: top;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:960px){
+    .text-container{
+        width: 500px;
+    }
+    .image-container{
+        width:300px;
+    }
 }

@@ -12,14 +12,34 @@
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400;500;600;700&display=swap"
+    rel="stylesheet">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 </head>
 
 <body>
-  <div class="container">
-    <svg class="background-img" xmlns="http://www.w3.org/2000/svg" width="830" height="800"><defs><linearGradient id="a" x1="95.861%" x2="10.913%" y1="2.476%" y2="101.718%"><stop offset="0%" stop-color="#FFF1F1"/><stop offset="100%" stop-color="#FFF"/></linearGradient><linearGradient id="b" x1="95.937%" x2="10.848%" y1="2.476%" y2="101.718%"><stop offset="0%" stop-color="#FFF1F1"/><stop offset="100%" stop-color="#FFF"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><path fill="url(#a)" d="M0 800c48.557-184.991 167.048-301.57 355.473-349.737C543.898 402.096 688.074 252.008 788 0v800H0z" transform="rotate(180 394 400)"/><path fill="url(#b)" d="M413 800c25.696-97.814 88.4-159.455 188.112-184.924C700.824 589.608 777.12 510.25 830 377v423H413z"/></g></svg>
-    <div class="text-container">
+
+  <div class="text-container">
+    <svg class="background-img" xmlns="http://www.w3.org/2000/svg" width="830" height="800">
+      <defs>
+        <linearGradient id="a" x1="95.861%" x2="10.913%" y1="2.476%" y2="101.718%">
+          <stop offset="0%" stop-color="#FFF1F1" />
+          <stop offset="100%" stop-color="#FFF" />
+        </linearGradient>
+        <linearGradient id="b" x1="95.937%" x2="10.848%" y1="2.476%" y2="101.718%">
+          <stop offset="0%" stop-color="#FFF1F1" />
+          <stop offset="100%" stop-color="#FFF" />
+        </linearGradient>
+      </defs>
+      <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)"
+          d="M0 800c48.557-184.991 167.048-301.57 355.473-349.737C543.898 402.096 688.074 252.008 788 0v800H0z"
+          transform="rotate(180 394 400)" />
+        <path fill="url(#b)"
+          d="M413 800c25.696-97.814 88.4-159.455 188.112-184.924C700.824 589.608 777.12 510.25 830 377v423H413z" />
+      </g>
+    </svg>
+    <div class="text">
       <div class="logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="158" height="33">
           <defs>
@@ -37,7 +57,7 @@
           </g>
         </svg>
       </div>
-      <div class="text">
+      <div>
         <h1><span>WE'RE</span> <br>COMING <br>SOON</h1>
 
       </div>
@@ -46,17 +66,27 @@
         Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
       <form>
-        <input type="text" placeholder="Email Address">
+        <input type="email" placeholder="Email Address">
+        <div class="error-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="12" cy="12" r="12" fill="#F96464" />
+              <path fill="#FFF" fill-rule="nonzero"
+                d="M13.256 6v9.056h-2V6h2zm-.944 12.464c-.384 0-.699-.104-.944-.312a1.027 1.027 0 0 1-.368-.824c0-.33.125-.608.376-.832.25-.224.563-.336.936-.336.373 0 .68.112.92.336.24.224.36.501.36.832 0 .341-.117.616-.352.824-.235.208-.544.312-.928.312z" />
+            </g>
+          </svg>
+        </div>
         <div class="submit-btn">
           <i class='bx bx-chevron-right'></i>
         </div>
+        <p class="error-message">Please provide a valid email</p>
       </form>
     </div>
-
-    <div class="image-container">
-      <img src="./images/hero-desktop.jpg" alt="hero-img">
-    </div>
   </div>
+  <div class="image-container">
+    <img src="./images/hero-desktop.jpg" alt="hero-img">
+  </div>
+  <script src="main.js"></script>
 </body>
 
 </html>
