@@ -17,11 +17,12 @@ body {
 
 .background-img {
     width: 100%;
+    height: 100vh;
     display: block;
 }
 
 .text-container {
-    width: 800px;
+    width: 700px;
     position: relative;
     display: inline-block;
 }
@@ -132,7 +133,8 @@ input:focus {
 .image-container {
     display: inline-block;
     position: relative;
-    width: 400px;
+    width: 450px;
+    height: 100vh;
     vertical-align: top;
 }
 
@@ -142,11 +144,12 @@ input:focus {
     object-fit: cover;
 }
 
-@media screen and (max-width:960px){
-    .text-container{
+@media screen and (max-width:1200px) {
+    .text-container {
         width: 500px;
     }
-    .image-container{
-        width:300px;
+
+    .image-container {
+        width: 300px;
     }
 }
